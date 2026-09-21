@@ -1,0 +1,29 @@
+<div class="dashboard">
+  <h1> {{Mainlabel}}</h1>
+
+  <app-token-card [token]="userToken" [title]="label"></app-token-card>
+  <h2>Доступные модели</h2>
+
+  <div class="models">
+    <app-model-card
+        *ngFor="let model of models"
+        [model]="model">
+    </app-model-card>
+    </div>
+
+
+  <h2>Инструменты</h2>
+
+  <div class="tools">
+    <button
+      *ngFor="let tool of tools"
+      (click)="selectTool(tool)"
+      [class.active]="tool === selectedTool">
+      {{ tool }}
+    </button>
+  </div>
+
+  <div class="selected-tool">
+    Выбран инструмент: {{ selectedTool }}
+  </div>
+</div>

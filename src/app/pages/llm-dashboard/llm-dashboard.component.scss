@@ -1,0 +1,31 @@
+.dashboard {
+  padding: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.models {
+  display: flex;
+  gap: 12px;
+}
+
+.model {
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  flex: 1;
+}
+.tools {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tools button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.tools button.active {
+  font-weight: bold;
+  background: #ddd;
+}

@@ -1,0 +1,16 @@
+<div class="token-card">
+  <h2>{{ title }}</h2>
+
+  <div class="token-row">
+    <div class="token-value">
+      {{ isTokenVisible ? token : '••••••••••••••••••••' }}
+    </div>
+
+    <button (click)="copyUserToken()">
+      Копировать
+    </button>
+    <button class="toggleToken" (click)="toggleToken()">
+      {{ isTokenVisible ? 'Скрыть' : 'Показать' }}
+    </button>
+  </div>
+</div>
